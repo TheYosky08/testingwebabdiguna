@@ -10,7 +10,7 @@
   <style>
     html{scroll-behavior:smooth;}
     *{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif}
-    body{color:#333;line-height:1.6}
+    body{color:#333;line-height:1.6;width: 100%;max-width: 100%;overflow-x: hidden;}
     a{text-decoration:none;color:inherit}
 
     header{
@@ -27,20 +27,23 @@
   z-index: 999;
 
   background: transparent;
-
-  transition:
-    background-color 0.9s cubic-bezier(.4,0,.2,1),
-    backdrop-filter 0.9s cubic-bezier(.4,0,.2,1),
-    box-shadow 0.9s cubic-bezier(.4,0,.2,1),
-    height 0.6s cubic-bezier(.4,0,.2,1);
+  transition: all .6s cubic-bezier(.4,0,.2,1);
 
   border-bottom-left-radius: 24px;
   border-bottom-right-radius: 24px;
 }
 
+header .nav{
+  height: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+}
+
+
 
 header.scrolled{
-  background: rgba(190,190,190,0.92); /* abu premium */
+  background: rgba(190,190,190,0.92);
   backdrop-filter: blur(10px);
   box-shadow: 0 12px 30px rgba(0,0,0,.18);
   height: 68px;
@@ -96,7 +99,30 @@ header.scrolled .logo{
   -webkit-text-fill-color: transparent;
 }
 
-    .nav{max-width:1200px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:15px}
+header.scrolled .logo-img{
+  height: 30px;
+}
+
+header.scrolled .logo-text{
+  font-size: 19px;
+  -webkit-text-fill-color: #111;
+  background: none;
+}
+
+header:not(.scrolled) .logo-wrap{
+  height: 90px;              /* ⬅️ SAMAKAN dengan header normal */
+}
+
+    .nav{
+  max-width:1200px;
+  margin:auto;
+  width:100%;
+  height:100%;    
+  display:grid;
+  grid-template-columns:auto 1fr auto;
+  align-items:center;      /* ⬅️ ikut tinggi header */
+  padding:0 20px;}
+
     .logo{
   font-size: 22px;
   font-weight: 800;
@@ -123,22 +149,14 @@ header.scrolled .logo{
     .menu a:hover{color:#ffb703}
     .burger{display:none;font-size:24px;cursor:pointer}
 
-    .hero{
-  position: relative;
-  min-height: 100vh;
-  padding-top: 110px;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-
-  border-bottom-left-radius: 60px;
-  border-bottom-right-radius: 60px;
-}
 
 /* BACKGROUND DIAM */
 .hero{
   position: relative;
   min-height: 100vh;
+  width: 100%;
+  height: auto;
+  padding: 120px 20px 80px;
   padding-top: 110px;
   display: flex;
   align-items: center;
@@ -182,8 +200,14 @@ header.scrolled .logo{
     }
 
     .hero-content{max-width:1200px;margin:auto;color:#fff;padding:20px}
-    .hero h1{font-size:44px;margin-bottom:15px}
-    .hero p{font-size:18px;margin-bottom:25px}
+    .hero h1 {
+    font-size: clamp(28px, 6vw, 48px);
+    line-height: 1.2;
+  }
+  .hero p {
+    font-size: clamp(14px, 4vw, 18px);
+  }
+
     .btn{background:#ff6600;color:#fff;padding:12px 26px;border-radius:6px;font-weight:bold;display:inline-block}
 
     section{padding:90px 20px}
@@ -213,16 +237,18 @@ header.scrolled .logo{
     @media(max-width:768px){
       .menu{display:none;flex-direction:column;background:#0a2351;position:absolute;top:60px;right:20px;padding:15px;border-radius:8px}
       .menu.show{display:flex}
-      .burger{display:block}
+      .burger{display:block; align-self: center; }
       .hero h1{font-size:30px}
     }
 
     /* HERO LAYOUT ALA WEB 1 */
 .hero{
+  width: 100%;
   min-height:100vh;
   display:flex;
   align-items:center;
   padding-top: 110px;
+  padding: 140px 20px 80px;
   position: relative;
   overflow: hidden;
   border-bottom-left-radius: 60px;
@@ -614,36 +640,47 @@ header.scrolled .logo{
 }
 
 /* LOGO + TEXT WRAPPER */
+header.scrolled .logo-text{
+
+}
+
+header.scrolled .logo-wrap{
+  height: 68px;          /* samakan tinggi header */
+  align-items: center;
+
+}
+header .nav{
+  display: grid;
+  grid-template-columns: auto 1fr auto; /* kiri – tengah – kanan */
+  align-items: center;
+  height: 100%;
+}
+
 .logo-wrap{
   display: flex;
   align-items: center;
   gap: 12px;
-  cursor: pointer;
+
+  height: 68px;              /* ⬅️ SAMAKAN dengan header.scrolled */
 }
 
 /* LOGO IMAGE */
 .logo-img{
-  height: 38px;
-  width: auto;
-  transition: 
-    height 0.6s cubic-bezier(.4,0,.2,1),
-    transform 0.3s ease;
+  height: 42px;
+  transition: height .6s cubic-bezier(.4,0,.2,1);
 }
 
 /* TEXT LOGO */
 .logo-text{
-  font-size: 22px;
+  display: flex;
+  align-items: center;
+  line-height: 1;        /* ⬅️ hilangkan ruang bawah font */
+
+  font-size: 20px;
   font-weight: 800;
   letter-spacing: .6px;
 
-  background: linear-gradient(
-    135deg,
-    #FFD700,
-    #FFB700,
-    #E6A700,
-    #FFD700
-  );
-
+  background: linear-gradient(135deg,#FFD700,#FFB700,#E6A700);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -732,13 +769,27 @@ header.scrolled .logo-text{
 
 @media (max-width: 768px) {
 
-  @media (max-width: 768px) {
+  @media (max-width: 100%) {
+
+
   header {
+    backdrop-filter: blur(2px);
     padding: 0 20px; /* jarak kiri kanan lebih lega */
   }
 
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .hero {
+    padding-top: 140px;
+    text-align: center;
+    width: 100%;
+  }
+  
   .nav {
-    padding: 0;
+    padding: 0 20px;
   }
 
   .logo {
@@ -748,8 +799,10 @@ header.scrolled .logo-text{
   }
 
   .burger {
+    align-self: center; 
     margin-left: 16px;
     font-size: 26px;
+    justify-self: end; /* benar-benar mentok kanan */
   }
 }
 
@@ -1122,7 +1175,7 @@ header.scrolled .logo-text{
 
     <!-- WHATSAPP BUTTON -->
     <a 
-      href="https://wa.me/6282007580567?text=Halo%20Abdi%20Guna%20Transport,%20saya%20ingin%20sewa%20bus"
+      href="https://wa.me/62882007580567?text=Halo%20Abdi%20Guna%20Transport,%20saya%20ingin%20sewa%20bus"
       target="_blank"
       class="wa-button">
       💬 Hubungi via WhatsApp
@@ -1247,3 +1300,4 @@ scrollBtn.addEventListener("click", () => {
   
 </body>
 </html>
+
