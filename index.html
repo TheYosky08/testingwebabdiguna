@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sewa Bus Pariwisata Jogja | Armada Lengkap & Terpercaya</title>
+  <meta name="description" content="Jasa sewa bus pariwisata Jogja profesional. Armada big bus, medium bus, elf. Cocok untuk tour, sekolah, ziarah, dan perusahaan." />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    html{scroll-behavior:smooth;}
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif}
+    body{color:#333;line-height:1.6}
+    a{text-decoration:none;color:inherit}
+
+    header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 60px;
+  z-index: 999;
+
+  background: transparent;
+
+  transition:
+    background-color 0.9s cubic-bezier(.4,0,.2,1),
+    backdrop-filter 0.9s cubic-bezier(.4,0,.2,1),
+    box-shadow 0.9s cubic-bezier(.4,0,.2,1),
+    height 0.6s cubic-bezier(.4,0,.2,1);
+
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
+
+
+header.scrolled{
+  background: rgba(190,190,190,0.92); /* abu premium */
+  backdrop-filter: blur(10px);
+  box-shadow: 0 12px 30px rgba(0,0,0,.18);
+  height: 68px;
+}
+
+header .logo{
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: .4px;
+  transition: font-size 0.6s ease;
+}
+
+header.scrolled .logo{
+  font-size: 19px;
+}
+
+header nav a{
+  color: #fff;
+  font-weight: 500;
+  margin-left: 26px;
+  position: relative;
+  transition: color .3s ease;
+}
+
+header.scrolled nav a{
+  color: #111;
+}
+
+header nav a::after{
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #ff8c00;
+  transition: width .3s ease;
+}
+
+header nav a:hover::after{
+  width: 100%;
+}
+
+header.scrolled .logo{
+  background: linear-gradient(
+    135deg,
+    #E6A700,
+    #FFD700,
+    #FFCC33
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+    .nav{max-width:1200px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:15px}
+    .logo{
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: .6px;
+
+  background: linear-gradient(
+    135deg,
+    #FFD700,
+    #FFB700,
+    #E6A700,
+    #FFD700
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+
+  transition: all 0.6s cubic-bezier(.4,0,.2,1);
+  text-shadow: 0 2px 12px rgba(255, 200, 0, 0.25);
+}
+
+    .menu{display:flex;gap:20px;}
+    .menu a:hover{color:#ffb703}
+    .burger{display:none;font-size:24px;cursor:pointer}
+
+    .hero{
+  position: relative;
+  min-height: 100vh;
+  padding-top: 110px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+}
+
+/* BACKGROUND DIAM */
+.hero{
+  position: relative;
+  min-height: 100vh;
+  padding-top: 110px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+}
+
+/* BACKGROUND DIAM */
+.hero-bg{
+  position: fixed;
+  inset: 0;
+
+  background: url("https://images.unsplash.com/photo-1544620347-c4fd4a3d5957")
+    center / cover no-repeat;
+
+  z-index: -1;
+}
+
+/* OVERLAY */
+.hero-bg::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+}
+
+/* KONTEN DI ATAS */
+.hero-wrap{
+  position: relative;
+  z-index: 2;
+}
+
+
+    .hero-wrap,
+    .hero-text,
+    .nav{
+      position:relative;
+    z-index:2;
+    }
+
+    .hero-content{max-width:1200px;margin:auto;color:#fff;padding:20px}
+    .hero h1{font-size:44px;margin-bottom:15px}
+    .hero p{font-size:18px;margin-bottom:25px}
+    .btn{background:#ff6600;color:#fff;padding:12px 26px;border-radius:6px;font-weight:bold;display:inline-block}
+
+    section{padding:90px 20px}
+    .container{max-width:1200px;margin:auto}
+    .title{text-align:center;margin-bottom:50px}
+    .title h2{font-size:32px;color:#0a2351}
+
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px}
+    .card{background:#fff;padding:25px;border-radius:10px;box-shadow:0 10px 20px rgba(0,0,0,.1)}
+    .card h3{margin-bottom:10px;color:#0a2351}
+
+    .armada img{width:100%;border-radius:10px}
+
+    .price{font-size:22px;color:#ff6600;font-weight:bold}
+
+    .testi{background:#f4f6f8}
+
+    .faq details{background:#fff;padding:15px;border-radius:6px;margin-bottom:10px;box-shadow:0 3px 10px rgba(0,0,0,.08)}
+
+    .contact{background:#f4f4f4}
+    form{max-width:600px;margin:auto;display:grid;gap:15px}
+    input,textarea{padding:12px;border-radius:6px;border:1px solid #ccc}
+    button{background:#0a2351;color:#fff;border:none;padding:12px;border-radius:6px;font-size:16px;cursor:pointer}
+
+    footer{background:#0a2351;color:#fff;text-align:center;padding:25px}
+
+    @media(max-width:768px){
+      .menu{display:none;flex-direction:column;background:#0a2351;position:absolute;top:60px;right:20px;padding:15px;border-radius:8px}
+      .menu.show{display:flex}
+      .burger{display:block}
+      .hero h1{font-size:30px}
+    }
+
+    /* HERO LAYOUT ALA WEB 1 */
+.hero{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  padding-top: 110px;
+  position: relative;
+  overflow: hidden;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  overflow: hidden;
+}
+
+.hero-wrap{
+  max-width:1200px;
+  margin:auto;
+  padding:0 20px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  align-items:center;
+}
+
+.hero-text{
+  color:#fff;
+}
+
+.hero-text h1{
+  font-family:'Poppins',sans-serif;
+  font-size:56px;
+  font-weight:800;
+  line-height:1.1;
+  margin-bottom:20px;
+}
+
+.hero-text p{
+  font-size:18px;
+  max-width:480px;
+  margin-bottom:32px;
+}
+
+/* BACKGROUND HERO DIAM SAAT SCROLL */
+.hero::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  background:url("hero.jpg") center / cover no-repeat;
+  z-index:-2;
+}
+
+/* OVERLAY GELAP */
+.hero::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.45);
+  z-index:-1;
+}
+
+/* SECTION SOLID PREMIUM */
+.section-solid{
+  position: relative;
+  background:
+    linear-gradient(
+      180deg,
+      #f8f9fb 0%,
+      #f1f3f7 100%
+    );
+  z-index: 3;
+}
+
+/* OPSIONAL: POLA HALUS BIAR LEBIH HIDUP */
+.section-solid::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    radial-gradient(rgba(0,0,0,0.03) 1px, transparent 1px);
+  background-size: 24px 24px;
+
+  opacity: .35;
+  pointer-events: none;
+}
+
+/* ISI DI ATAS BACKGROUND */
+.section-solid > *{
+  position: relative;
+  z-index: 1;
+}
+
+#armada.section-solid{
+  background:
+    linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #eef1f6 100%
+    );
+}
+    #harga.section-solid{
+  background:
+    linear-gradient(
+      180deg,
+      #0a2351 0%,
+      #142d63 100%
+    );
+}
+
+#harga {
+  display: none;
+}
+#harga .title h2,
+#harga .card h3,
+#harga .price{
+  color:#fff;
+}
+
+/* CONTAINER */
+.container{
+  max-width:1200px;
+  margin:auto;
+  padding:80px 20px;
+}
+
+/* HEADER */
+.section-header{
+  text-align:center;
+  margin-bottom:48px;
+}
+
+.section-header h2{
+  font-size:36px;
+  font-weight:800;
+  margin-bottom:12px;
+}
+
+.section-header p{
+  color:#666;
+  font-size:16px;
+}
+
+/* GRID */
+.armada-grid{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:24px;
+}
+
+/* ARMADA CARD BASE */
+.armada-card{
+  background:#fff;
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:0 20px 40px rgba(0,0,0,.08);
+
+  opacity: 0;
+  transform: translateX(60px);
+  transition:
+    opacity .8s ease,
+    transform .8s cubic-bezier(.4,0,.2,1),
+    box-shadow .3s ease;
+
+  will-change: transform, opacity;
+}
+
+/* ARAH MASUK */
+.armada-card.from-left{
+  transform: translateX(-80px);
+}
+.armada-card.from-right{
+  transform: translateX(80px);
+}
+
+/* SAAT MUNCUL */
+.armada-card.show{
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* HOVER (AMAN, TIDAK TIMPA) */
+.armada-card.show:hover{
+  transform: translateX(0) scale(1.03);
+  box-shadow:0 30px 60px rgba(0,0,0,.12);
+}
+
+/* DELAY */
+.armada-card.delay-1{ transition-delay: 0s; }
+.armada-card.delay-2{ transition-delay: .15s; }
+.armada-card.delay-3{ transition-delay: .3s; }
+
+
+
+
+/* IMAGE */
+.armada-img{
+  height:180px;
+  overflow:hidden;
+}
+
+.armada-img img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+/* BODY */
+.armada-body{
+  padding:20px;
+}
+
+.armada-body h3{
+  font-size:18px;
+  font-weight:700;
+  margin-bottom:6px;
+}
+
+.armada-body p{
+  font-size:14px;
+  color:#777;
+  margin-bottom:16px;
+}
+
+
+#faq {
+  padding-top: 120px;
+}
+
+#faq .title h2 {
+  color: #ffffff !important;
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-shadow: 0 6px 18px rgba(0,0,0,0.7);
+}
+
+/* Scroll */
+/* SCROLL UP BUTTON */
+#scrollTopBtn{
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+
+  width: 46px;
+  height: 46px;
+
+  border: none;
+  border-radius: 14px;
+
+  background: linear-gradient(
+    145deg,
+    #e5e7eb,
+    #cfd4dc
+  );
+
+  color: #111;
+  font-size: 22px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 12px 28px rgba(0,0,0,0.18);
+
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(20px);
+
+  transition: 
+    opacity .35s ease,
+    transform .35s ease,
+    box-shadow .3s ease;
+  z-index: 999;
+}
+
+/* MUNCUL */
+#scrollTopBtn.show{
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+/* HOVER */
+#scrollTopBtn:hover{
+  box-shadow: 0 16px 36px rgba(0,0,0,0.25);
+  background: linear-gradient(
+    145deg,
+    #f3f4f6,
+    #d1d5db
+  );
+}
+
+
+/* FOOTER */
+.armada-footer{
+  display:flex;
+  align-items:baseline;
+}
+
+.price{
+  font-size:20px;
+  font-weight:800;
+  color:#0a2351;
+}
+
+.per{
+  font-size:13px;
+  color:#777;
+  margin-left:6px;
+}
+
+.kontak-section{
+  padding:80px 20px;
+  background:linear-gradient(
+    135deg,
+    #f1f5f9,
+    #e5e7eb,
+    #cbd5e1
+  );
+  color:#1e293b;
+}
+
+.kontak-container{
+  max-width:1100px;
+  margin:auto;
+  text-align:center;
+}
+
+.kontak-section h2{
+  color:#111827;              /* hitam elegan */
+  font-size:36px;
+  font-weight:800;
+  margin-bottom:12px;
+  text-shadow:0 4px 12px rgba(0,0,0,0.15);
+}
+
+.kontak-section p{
+  color: #CBD5E1;   /* hampir putih tapi masih soft */
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.75;
+  max-width: 640px;
+  margin: 0 auto 36px;
+  letter-spacing: 0.3px;
+}
+
+
+
+
+.kontak-container h2{
+  font-size:36px;
+  margin-bottom:10px;
+  color:#ffb703;
+}
+
+.kontak-container p{
+  color:#cbd5e1;
+  margin-bottom:40px;
+}
+
+/* MAP */
+.maps-wrapper{
+  width:100%;
+  height:380px;
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:0 20px 40px rgba(0,0,0,0.4);
+  margin-bottom:30px;
+}
+
+.maps-wrapper iframe{
+  width:100%;
+  height:100%;
+  border:0;
+}
+
+/* WHATSAPP BUTTON */
+.wa-button{
+  display:inline-block;
+  background:linear-gradient(135deg,#25D366,#1ebe5d);
+  color:#fff;
+  padding:16px 32px;
+  border-radius:50px;
+  font-size:18px;
+  font-weight:600;
+  text-decoration:none;
+  transition:0.3s ease;
+  box-shadow:0 10px 30px rgba(37,211,102,0.4);
+}
+
+.wa-button:hover{
+  transform:translateY(-3px);
+  box-shadow:0 15px 40px rgba(37,211,102,0.6);
+}
+
+/* LOGO + TEXT WRAPPER */
+.logo-wrap{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+/* LOGO IMAGE */
+.logo-img{
+  height: 38px;
+  width: auto;
+  transition: 
+    height 0.6s cubic-bezier(.4,0,.2,1),
+    transform 0.3s ease;
+}
+
+/* TEXT LOGO */
+.logo-text{
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: .6px;
+
+  background: linear-gradient(
+    135deg,
+    #FFD700,
+    #FFB700,
+    #E6A700,
+    #FFD700
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+
+  transition: font-size 0.6s ease;
+  text-shadow: 0 2px 12px rgba(255, 200, 0, 0.25);
+}
+
+/* SAAT HEADER SCROLL */
+header.scrolled .logo-img{
+  height: 30px;
+}
+
+header.scrolled .logo-text{
+  font-size: 19px;
+}
+
+/* LOGO NORMAL */
+.logo-img{
+  height: 42px;
+  filter:
+    drop-shadow(0 0 6px rgba(255,215,0,0.5));
+  transition:
+    height .6s cubic-bezier(.4,0,.2,1),
+    filter .4s ease;
+}
+
+/* LOGO SAAT SCROLL */
+header.scrolled .logo-img{
+  height: 30px;
+  filter:
+    brightness(0.15)
+    drop-shadow(0 0 2px rgba(0,0,0,0.4));
+}
+
+
+/* TEKS LOGO - NORMAL */
+.logo-text{
+  background: linear-gradient(
+    135deg,
+    #FFD700,
+    #FFB700,
+    #E6A700
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* SAAT SCROLL → JADI GELAP */
+header.scrolled .logo-text{
+  background: none;
+  -webkit-text-fill-color: #111;
+  color: #111;
+}
+
+
+
+
+
+
+/*.hero::after {
+  content: "";
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+  width: 100%;
+  height: 180px;
+  background: #ffffff;
+  border-top-left-radius: 100% 80%;
+  border-top-right-radius: 100% 80%;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .hero-wrap{
+    grid-template-columns:1fr;
+    text-align:center;
+  }
+  .hero-text h1{font-size:38px}
+
+  .armada-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+
+  @media (max-width: 768px) {
+  header {
+    padding: 0 20px; /* jarak kiri kanan lebih lega */
+  }
+
+  .nav {
+    padding: 0;
+  }
+
+  .logo {
+    max-width: 70%;
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  .burger {
+    margin-left: 16px;
+    font-size: 26px;
+  }
+}
+
+.armada-grid{
+    grid-template-columns: 1fr;
+  }
+
+  /* MENU SLIDE */
+.menu {
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  height: 100vh;
+  width: 260px;
+
+  background: linear-gradient(
+    180deg,
+    rgba(215,215,215,0.96),
+    rgba(195,195,195,0.93)
+  );
+
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  box-shadow: 18px 0 40px rgba(0,0,0,0.35);
+
+  padding: 90px 24px 24px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+
+  transform: translateX(-100%);
+  transition: transform 0.4s cubic-bezier(.4,0,.2,1);
+
+  border-top-right-radius: 26px;
+  border-bottom-right-radius: 26px;
+
+}
+
+/* OVERLAY */
+.menu-overlay {
+  position: fixed;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.35); /* gelap tipis */
+  
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 998;
+}
+
+.menu-overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.menu.show {
+  transform: translateX(0);
+}
+
+.menu a {
+  font-size: 16px;
+  font-weight: 500;
+  color: #111;
+  padding: 10px 0;
+}
+
+.menu a:hover {
+  color: #000;
+}
+
+.menu a:active {
+  opacity: 0.6;
+}
+
+
+.menu a:not(:last-child) {
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.menu-title {
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgba(0,0,0,0.6);
+  margin-bottom: 12px;
+}
+
+.hero-wrap{
+    grid-template-columns:1fr;
+    text-align:center;
+  }
+
+  .hero-text h1{
+    font-size:38px;
+  }
+}
+
+
+
+    /* FAQ HOVER */
+.faq-item {
+    background: #fff;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    padding: 18px 22px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.faq-question {
+    font-weight: 600;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.faq-question::before {
+    content: "▶";
+    font-size: 14px;
+    transition: transform 0.3s ease;
+}
+
+/* JAWABAN (AWAL TERTUTUP) */
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.4s ease;
+    margin-top: 0;
+}
+
+/* SAAT HOVER */
+.faq-item:hover .faq-answer {
+    max-height: 200px;
+    opacity: 1;
+    margin-top: 12px;
+}
+
+.faq-item:hover .faq-question::before {
+    transform: rotate(90deg);
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .faq-question {
+        font-size: 16px;
+    }
+    .faq-answer {
+        font-size: 14px;
+    }
+    .armada-grid{
+    grid-template-columns: 1fr;
+  }
+}
+
+/* BASE */
+.armada-card{
+  opacity: 0;
+  transform: translateX(0);
+  transition: 
+    opacity .8s ease,
+    transform .8s cubic-bezier(.4,0,.2,1);
+  will-change: transform, opacity;
+}
+
+/* ARAH */
+.armada-card.from-left{
+  transform: translateX(-80px);
+}
+.armada-card.from-right{
+  transform: translateX(80px);
+}
+
+/* AKTIF */
+.armada-card.show{
+  opacity: 1;
+  transform: translateX(0);
+}
+
+  </style>
+</head>
+<body>
+
+
+<div class="menu-overlay" onclick="toggleMenu()"></div>
+<header>
+  <div class="nav">
+    <div class="logo-wrap">
+      <img src="./logo jadi.png" class="logo-img">
+      <span class="logo-text">Abdi Guna Transport</span>
+    </div>    
+    <div class="burger" onclick="toggleMenu()">☰</div>
+    <div class="menu-title"></div>
+    <nav class="menu" id="menu">
+      <a href="#home" class="menu-link">Home</a>
+      <a href="#layanan" class="menu-link">Layanan</a>
+      <a href="#armada" class="menu-link">Armada</a>
+      <!--<a href="#harga" class="menu-link">Harga</a>-->
+      <a href="#faq" class="menu-link">FAQ</a>
+      <a href="#kontak" class="menu-link">Kontak</a>
+    </nav>    
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+
+  <div class="hero-wrap">
+
+    <!-- KIRI (kosong, visual background) -->
+    <div></div>
+
+    <!-- KANAN (TEKS) -->
+    <div class="hero-text">
+      <h1>Sewa Bus Pariwisata Jogja Nyaman dan Terpercaya</h1>
+      <p>
+        Melayani sewa bus wisata, acara dan perjalanan dinas di Yogyakarta dengan armada terbaru, fasilitas lengkap dan driver profesional.
+        
+        Solusi terbaik untuk perjalanan wisata dan event Anda.
+      </p>
+      <a href="#kontak" class="btn">Pesan Sekarang</a>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="layanan" class="section-solid">
+  <div class="container">
+    <div class="title"><h2>Layanan Kami</h2></div>
+    <div class="grid">
+      <div class="card"><h3>Sewa Bus Harian</h3><p>Big Bus & Medium Bus AC, reclining seat, audio video.</p></div>
+      <div class="card"><h3>Tour & Ziarah</h3><p>Paket wisata Jogja, Jawa Tengah, Jawa Timur.</p></div>
+      <div class="card"><h3>Event & Perusahaan</h3><p>Outing, gathering, study tour & dinas.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="armada" class="section-solid">
+  <div class="container">
+
+    <div class="section-header">
+      <h2>Armada Kami</h2>
+      <p>Pilihan bus terbaik dengan fasilitas lengkap dan harga transparan</p>
+    </div>
+
+    <div class="armada-grid">
+
+      <!-- CARD 1 -->
+      <div class="armada-card from-left delay-1">
+        <div class="armada-img">
+          <img src="bus-1.jpeg" alt="Bus 1">
+        </div>
+        <div class="armada-body">
+          <h3>Bus Medium JB 1</h3>
+          <p>31 (33) Seat • AC • Reclining Seat</p>
+          <div class="armada-footer"> 
+            <span class="price">Rp 1.500.000</span> 
+            <span class="per">/ hari</span> 
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="armada-card from-left delay-2">
+        <div class="armada-img">
+          <img src="bus 2.jpeg" alt="Bus 2">
+        </div>
+        <div class="armada-body">
+          <h3>Bus Medium JB 3</h3>
+          <p>35 Seat • AC • Audio • Karaoke</p>
+          <div class="armada-footer"> 
+            <span class="price">Rp 1.500.000</span> 
+            <span class="per">/ hari</span> 
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="armada-card from-right delay-3">
+        <div class="armada-img">
+          <img src="Bus 3.jpeg" alt="Bus 3">
+        </div>
+        <div class="armada-body">
+          <h3>Bus Medium JB 3</h3>
+          <p>35 Seat • Wifi • TV • AC • Karaoke</p>
+          <div class="armada-footer"> 
+            <span class="price">Rp 1.500.000</span> 
+            <span class="per">/ hari</span> 
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- CARD 2 
+<section id="harga" class="section-solid">
+  <div class="container">
+    <div class="title"><h2>Harga Sewa</h2></div>
+    <div class="grid">
+      <div class="card"><h3>Medium Bus</h3><p class="price">Mulai Rp 1.500.000 / hari</p></div>
+      <div class="card"><h3>Big Bus</h3><p class="price">Mulai Rp 2.500.000 / hari</p></div>
+      <div class="card"><h3>Elf / Hiace</h3><p class="price">Mulai Rp 900.000 / hari</p></div>
+    </div>
+  </div>
+</section>-->
+
+<section class="testi">
+  <div class="container">
+    <div class="title"><h2>Testimoni Pelanggan</h2></div>
+    <div class="grid">
+      <div class="card"><p>"Bus nyaman, sopir ramah, perjalanan aman."</p><strong>- Budi</strong></div>
+      <div class="card"><p>"Harga sesuai, pelayanan mantap."</p><strong>- Siti</strong></div>
+      <div class="card"><p>"Rekomendasi untuk study tour."</p><strong>- SMA Negeri</strong></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="faq">
+  <div class="container">
+    <div class="title"><h2>Pertanyaan Umum</h2></div>
+    <div class="faq-item">
+      <div class="faq-question">Apakah termasuk sopir?</div>
+      <div class="faq-answer">
+          Ya, semua armada sudah termasuk sopir profesional.
+      </div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-question">Apakah bisa luar kota?</div>
+    <div class="faq-answer">
+      Bisa, silakan konsultasi rute.
+    </div>
+</div>
+<div class="faq-item">
+  <div class="faq-question">Bagaimana cara pesan?</div>
+  <div class="faq-answer">
+    Isi form atau hubungi WhatsApp.
+  </div>
+</div>
+</section>
+
+<section id="kontak" class="kontak-section">
+  <div class="kontak-container">
+
+    <h2>Kontak & Lokasi Kami</h2>
+    <p>Hubungi kami langsung via WhatsApp atau kunjungi lokasi kami di Google Maps</p>
+
+    <!-- GOOGLE MAPS -->
+    <div class="maps-wrapper">
+      <iframe 
+        src="https://www.google.com/maps?q=Yogyakarta&output=embed"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
+    </div>
+
+    <!-- WHATSAPP BUTTON -->
+    <a 
+      href="https://wa.me/6282007580567?text=Halo%20Abdi%20Guna%20Transport,%20saya%20ingin%20sewa%20bus"
+      target="_blank"
+      class="wa-button">
+      💬 Hubungi via WhatsApp
+    </a>
+
+  </div>
+</section>
+
+<!-- Scroll -->
+<button id="scrollTopBtn" aria-label="Scroll to top">
+  ↑
+</button>
+
+
+
+<footer>
+  <p>© 2026 Abdi Guna Transport • Persewaan Bus Pariwisata Jogja</p>
+</footer>
+
+<script>
+// smooth scroll khusus mobile + close menu
+const links = document.querySelectorAll('.menu-link').forEach(link => {
+  link.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    const target = document.querySelector(this.getAttribute('href'));
+    if (!target) return;
+
+    // tutup menu
+    document.getElementById('menu').classList.remove('show');
+    document.querySelector('.menu-overlay').classList.remove('show');
+    document.body.style.overflow = '';
+    document.documentElement.style.overflow = '';
+
+    const headerHeight = document.querySelector('header').offsetHeight;
+    const targetTop = target.offsetTop - headerHeight;
+
+    setTimeout(() => {
+      window.scrollTo({
+        top: targetTop,
+        behavior: 'smooth'
+      });
+    }, 300);
+  });
+});
+
+
+const cards = document.querySelectorAll('.armada-card');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+
+    if(entry.isIntersecting){
+      entry.target.classList.add('show');
+    } else {
+      // saat keluar viewport → reset
+      entry.target.classList.remove('show');
+    }
+
+  });
+},{
+  threshold: 0.25
+});
+
+cards.forEach(card => observer.observe(card));
+
+
+
+
+
+function toggleMenu(){
+  const menu = document.getElementById('menu');
+  const overlay = document.querySelector('.menu-overlay');
+  const body = document.body;
+  const html = document.documentElement;
+
+  const isOpen = menu.classList.contains('show');
+
+  if (isOpen) {
+    menu.classList.remove('show');
+    overlay.classList.remove('show');
+    body.style.overflow = '';
+    html.style.overflow = '';
+  } else {
+    menu.classList.add('show');
+    overlay.classList.add('show');
+    body.style.overflow = 'hidden';
+    html.style.overflow = 'hidden';
+  }
+}
+
+
+function sendWA(e){
+  e.preventDefault();
+  const n=nama.value,h=hp.value,p=pesan.value;
+  window.open(`https://wa.me/6281234567890?text=Halo,%20saya%20${n}%0ANo:%20${h}%0APesan:%20${p}`,'_blank')
+}
+
+
+  window.addEventListener("scroll", () => {
+    const header = document.querySelector("header");
+    header.classList.toggle("scrolled", window.scrollY > 60);
+  });
+
+  const scrollBtn = document.getElementById("scrollTopBtn");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 400) {
+    scrollBtn.classList.add("show");
+  } else {
+    scrollBtn.classList.remove("show");
+  }
+});
+
+scrollBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
+  </script>
+  
+</body>
+</html>
