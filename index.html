@@ -119,6 +119,7 @@ header:not(.scrolled) .logo-wrap{
   width:100%;
   height:100%;    
   display:grid;
+   /* kiri = logo | tengah = menu | kanan = kosong utk jarak */
   grid-template-columns:auto 1fr auto;
   align-items:center;      /* ⬅️ ikut tinggi header */
   padding:0 20px;}
@@ -147,9 +148,16 @@ header:not(.scrolled) .logo-wrap{
 
     .menu{
       left: -260px;
-    transform: none;
+      transform: none;
       display:flex;
-      gap:20px;}
+      gap:55px;
+      justify-self:start;   /* mulai dari garis hero */
+    }
+
+    .menu a:last-child{
+  margin-left:auto;
+}
+
     .menu a:hover{color:#ffb703}
     .burger{display:none;font-size:24px;cursor:pointer}
 
@@ -203,7 +211,7 @@ header:not(.scrolled) .logo-wrap{
     .hero-wrap,
     .hero-text,
     .nav{
-      position:relative;
+    position:relative;
     z-index:2;
     }
 
@@ -216,7 +224,16 @@ header:not(.scrolled) .logo-wrap{
     font-size: clamp(14px, 4vw, 18px);
   }
 
-    .btn{background:#ff6600;color:#fff;padding:12px 26px;border-radius:6px;font-weight:bold;display:inline-block}
+    .btn{
+    background:linear-gradient(135deg,#ff7a00,#ff5500);
+  color:#fff;
+  padding:16px 34px;
+  border-radius:14px;
+  font-weight:600;
+  display:inline-block;
+  box-shadow:0 10px 30px rgba(255,102,0,.35);
+  transition:all .25s ease;
+    }
 
     section{padding:90px 20px}
     .container{max-width:1200px;margin:auto}
@@ -224,7 +241,13 @@ header:not(.scrolled) .logo-wrap{
     .title h2{font-size:32px;color:#0a2351}
 
     .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px}
-    .card{background:#fff;padding:25px;border-radius:10px;box-shadow:0 10px 20px rgba(0,0,0,.1)}
+    .card{
+      background:#fff;
+      padding:25px;
+      border-radius:10px;
+      box-shadow:0 10px 20px rgba(0,0,0,.1)
+    }
+
     .card h3{margin-bottom:10px;color:#0a2351}
 
     .armada img{width:100%;border-radius:10px}
@@ -282,26 +305,31 @@ header:not(.scrolled) .logo-wrap{
   margin:auto;
   padding:0 20px;
   display:grid;
-  grid-template-columns:1fr 1fr;
+  grid-template-columns: 520px 1fr; /* teks fix kanan */
   align-items:center;
+  gap:40px;
 }
 
 .hero-text{
   color:#fff;
+  max-width:520px;
+  margin: left 0;; /* dorong ke kanan */
 }
 
 .hero-text h1{
   font-family:'Poppins',sans-serif;
-  font-size:56px;
+  font-size:64px;
   font-weight:800;
-  line-height:1.1;
-  margin-bottom:20px;
+  line-height:1.05;
+  margin-bottom:24px;
+  letter-spacing:-0.5px;
 }
 
 .hero-text p{
-  font-size:18px;
-  max-width:480px;
-  margin-bottom:32px;
+  font-size:17px;
+  line-height:1.7;
+  color:rgba(255,255,255,0.85);
+  margin-bottom:36px;
 }
 
 /* BACKGROUND HERO DIAM SAAT SCROLL 
@@ -422,7 +450,6 @@ header:not(.scrolled) .logo-wrap{
   border-radius:18px;
   overflow:hidden;
   box-shadow:0 20px 40px rgba(0,0,0,.08);
-
   opacity: 0;
   transform: translateX(60px);
   transition:
@@ -932,13 +959,17 @@ header.scrolled .logo-text{
 }
 
 .hero-wrap{
-    grid-template-columns:1fr;
-    text-align:center;
-  }
+  grid-template-columns:1fr;
+  text-align:center;
+}
 
-  .hero-text h1{
-    font-size:38px;
-  }
+.hero-text{
+  margin:auto;
+}
+
+.hero-text h1{
+  font-size:38px;
+}
 }
 
 
@@ -1076,6 +1107,11 @@ header.scrolled .logo-text{
 <section id="layanan" class="section-solid">
   <div class="container">
     <div class="title"><h2>Layanan Kami</h2></div>
+    <div class="section-header">
+      <p>Nikmati perjalanan yang lebih tenang dan menyenangkan bersama Abdi Guna Transport. Kami menyediakan armada bus pariwisata modern dengan kapasitas yang beragam, 
+        dilengkapi fasilitas AC, hiburan, dan kursi ergonomis. Ideal untuk kebutuhan wisata, acara keluarga, hingga perjalanan bisnis.
+      </p>
+    </div>
     <div class="grid">
       <div class="card"><h3>Sewa Bus Harian</h3><p>Big Bus & Medium Bus AC, reclining seat, audio video.</p></div>
       <div class="card"><h3>Tour & Ziarah</h3><p>Paket wisata Jogja, Jawa Tengah, Jawa Timur.</p></div>
@@ -1158,11 +1194,11 @@ header.scrolled .logo-text{
 
 <section class="testi">
   <div class="container">
-    <div class="title"><h2>Testimoni Pelanggan</h2></div>
+    <div class="title"><h2>Keunggulan Kami</h2></div>
     <div class="grid">
-      <div class="card"><p>"Bus nyaman, sopir ramah, perjalanan aman."</p><strong>- Budi</strong></div>
-      <div class="card"><p>"Harga sesuai, pelayanan mantap."</p><strong>- Siti</strong></div>
-      <div class="card"><p>"Rekomendasi untuk study tour."</p><strong>- SMA Negeri</strong></div>
+      <div class="card"><strong>Harga kompetitif dan terjangkau</strong><p></p></div>
+      <div class="card"><strong>Driver Profesional dan Berpengalaman</strong><p></p></div>
+      <div class="card"><strong>Layanan Cepat dan Ramah Pelanggan</strong><p></p></div>
     </div>
   </div>
 </section>
@@ -1332,4 +1368,3 @@ scrollBtn.addEventListener("click", () => {
   
 </body>
 </html>
-
